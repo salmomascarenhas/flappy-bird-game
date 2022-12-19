@@ -77,7 +77,7 @@ function Barreiras(altura, largura, abertura, espaco, notificarPonto) {
 const barreiras = new Barreiras(500, 300, 100, 400)
 const areaDoJogo = document.querySelector('[wm-flappy]')
 
-barreiras.pares.forEach( par => areaDoJogo.appendChild(par.elemento)) 
+// barreiras.pares.forEach( par => areaDoJogo.appendChild(par.elemento)) 
 
 setInterval(() => {
     barreiras.animar()
@@ -195,4 +195,4 @@ function colidiu(passaro, barreiras) {
         }, 20)
     }
 }
-/*  new FlappyBird().start() */ 
+new FlappyBird().start() 
